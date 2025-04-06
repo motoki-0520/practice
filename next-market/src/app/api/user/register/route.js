@@ -10,6 +10,5 @@ export async function POST(request){
         return NextResponse.json({message: "ユーザー登録成功"})
     }catch{
         return NextResponse.json({message: "ユーザー登録失敗"})
-    }
-    
+    }   
 }
