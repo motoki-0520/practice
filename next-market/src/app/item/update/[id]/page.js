@@ -30,7 +30,7 @@ const UpdateItem = ({params}) => {
     const handleSubmit = async(e) => {
         e.preventDefault()
         try{
-            const response = await fetch(`${process.env.NEXT_PUBLIC_URL}api/item/update/${params.id}`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/item/update/${params.id}`, {
                 method: "PUT",
                 headers: {
                     "Accept": "application/json",
